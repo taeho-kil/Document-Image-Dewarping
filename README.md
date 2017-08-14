@@ -37,13 +37,17 @@ parameterized with the polynomial parameters ![equation](https://latex.codecogs.
 
 For the estimation of these dewarping parameters ![equation](https://latex.codecogs.com/gif.latex?%5CTheta%20%3D%5C%28%5C%7Ba_%7Bm%7D%5C%7D_%7Bm%3D0%7D%5E%7BM%7D%2C%5Cmathbf%7BR%7D%5C%29), we develop a cost function:
 
+![equation](https://latex.codecogs.com/gif.latex?f_%7Bcost%7D%5C%28%5CTheta%20%5C%29%3Df_%7Btext%7D%5C%28%5CTheta%20%5C%29&plus;%5Clambda%20f_%7Bline%7D%5C%28%5CTheta%20%5C%29)
 
+where ![equation](https://latex.codecogs.com/gif.latex?f_%7Btext%7D%5C%28%5CTheta%20%5C%29) is a term reflecting the properties of text-lines in rectified images [1]. To be precise, this term becomes small when transformed text-lines are well-aligned: horizontally straight, line-spacings between two neighboring text-lines are regular, and text-blocks are either left-aligned, right-aligned, or justified.
 
-
-
+However, the optimization of ![equation](https://latex.codecogs.com/gif.latex?f_%7Btext%7D%5C%28%5CTheta%20%5C%29) sometimes yields severe distortions on non-text regions, and we also exploit line segments in document images by introducing ![equation](https://latex.codecogs.com/gif.latex?f_%7Bline%7D%5C%28%5CTheta%20%5C%29)
 
 
 ### Alignments of line semgents and its term
+Based on the observation that the majority of line segments are horizontally or ver
+
+
 ### Outlier removal and optimization
 
 
