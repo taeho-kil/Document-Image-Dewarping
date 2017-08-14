@@ -2,7 +2,7 @@
 
 
 <p align="center">
-<img src="/image/abs.png" width="700"> 
+<img src="/images/abs.png" width="700"> 
 </p>
 
 
