@@ -1,3 +1,5 @@
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
 # Robust Document Image Dewarping Method using Text-lines and Line Segments (ICDAR 2017)
 
 
@@ -31,6 +33,14 @@ layouts.
 
 ## Algorithm
 ### Proposed cost function
+For the parametric modeling of the dewarping process, we adopt the model in [1].
+By this model, the geometric relation between the captured image domain and the rectified document domain can be
+parameterized with the polynomial parameters and camera pose matrix.
+For the estimation of these dewarping parameters, we develop a cost function:
+
+where $ E=mc^2 $
+
+
 ### Alignments of line semgents and its term
 ### Outlier removal and optimization
 
