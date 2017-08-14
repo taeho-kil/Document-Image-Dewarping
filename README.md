@@ -2,8 +2,7 @@
 
 
 <p align="center">
-<img src="/image/imagebasedcolor.png" width="700"> 
-<img src="/image/patch_based_color.png" width="700">
+<img src="/image/abs.png" width="700"> 
 </p>
 
 
@@ -29,6 +28,7 @@ cost function with the updated information. Experimental results
 show that the proposed method is robust to the variety of page
 layouts.
 
+
 ## Algorithm
 ### Proposed cost function
 ### Alignments of line semgents and its term
@@ -38,3 +38,6 @@ layouts.
 ## Experimental results
 ### Experimental results on CBDAR 2007 dewarping contest dataset
 ### Experimental results on our dataset (non conventional images)
+
+
+## Reference
