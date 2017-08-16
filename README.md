@@ -44,7 +44,7 @@ where ![equation](https://latex.codecogs.com/gif.latex?f_%7Btext%7D%5C%28%5CThet
 
 ### Alignments of line semgents and its term
 <p align="center">
-<img src="/image/angle.png" width="600"> 
+<img src="/image/angle.png" width="500"> 
 </p>
 
 Based on the observation that the majority of line segments are horizontally or vertically aligned in the rectified images, we define the term as
