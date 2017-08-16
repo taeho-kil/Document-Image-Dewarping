@@ -45,11 +45,23 @@ However, the optimization of ![equation](https://latex.codecogs.com/gif.latex?f_
 
 
 ### Alignments of line semgents and its term
-Based on the observation that the majority of line segments are horizontally or ver
+Based on the observation that the majority of line segments are horizontally or vertically aligned in the rectified images, we define the term as
 
+![equation](https://latex.codecogs.com/gif.latex?f_%7Bline%7D%28%20%5CTheta%20%29%3D%20%5Csum_%7Bi%7D%20%5Cmin%20%28%5Ccos%5E%7B2%7D%20%5Ctheta_%7Bi%7D%20%2C%5Csin%5E%7B2%7D%20%5Ctheta_%7Bi%7D%29%2C)
+
+where ![equation](https://latex.codecogs.com/gif.latex?%5Ctheta_%7Bi%7D) is the angle of the transformed ![equation](https://latex.codecogs.com/gif.latex?i)-th line segment (when rectified with the current parameters ![equation](https://latex.codecogs.com/gif.latex?%5CTheta)). This term makes that all line segments are aligned in either vertical or horizontal direction.
+
+<p align="center">
+<img src="/images/angle.png" width="500"> 
+</p>
 
 ### Outlier removal and optimization
 
+The direct optimization of ![equation](https://latex.codecogs.com/gif.latex?f_%7Bcost%7D) may yield poorly rectified results, due to outliers. We treat two outlier types that are missed text-lines and line segments having arbitrary direction (non horizontal/vertical). For the outlier removal, we design an iterative mathod. For the outlier removal, we design an iterative method. At each step, we refine the features (text components and line segments) by removing outlier and minimize the cost function with updated inliers.
+
+<p align="center">
+<img src="/images/iteration.png" width="500"> 
+</p>
 
 ## Experimental results
 ### Experimental results on CBDAR 2007 dewarping contest dataset
@@ -57,3 +69,4 @@ Based on the observation that the majority of line segments are horizontally or 
 
 
 ## Reference
+1. Beom Su Kim, Hyung Il Koo, and Nam Ik Cho, "Document Dewarping via Text-line based Optimization," Pattern Recognition, Vol. 48, No. 11, pp. 3600 - 3614, Nov. 2015.
