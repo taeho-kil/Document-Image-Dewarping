@@ -39,9 +39,7 @@ For the estimation of these dewarping parameters ![equation](https://latex.codec
 
 ![equation](https://latex.codecogs.com/gif.latex?f_%7Bcost%7D%5C%28%5CTheta%20%5C%29%3Df_%7Btext%7D%5C%28%5CTheta%20%5C%29&plus;%5Clambda%20f_%7Bline%7D%5C%28%5CTheta%20%5C%29)
 
-where ![equation](https://latex.codecogs.com/gif.latex?f_%7Btext%7D%5C%28%5CTheta%20%5C%29) is a term reflecting the properties of text-lines in rectified images [1]. To be precise, this term becomes small when transformed text-lines are well-aligned: horizontally straight, line-spacings between two neighboring text-lines are regular, and text-blocks are either left-aligned, right-aligned, or justified.
-
-However, the optimization of ![equation](https://latex.codecogs.com/gif.latex?f_%7Btext%7D%5C%28%5CTheta%20%5C%29) sometimes yields severe distortions on non-text regions, and we also exploit line segments in document images by introducing ![equation](https://latex.codecogs.com/gif.latex?f_%7Bline%7D%5C%28%5CTheta%20%5C%29)
+where ![equation](https://latex.codecogs.com/gif.latex?f_%7Btext%7D%5C%28%5CTheta%20%5C%29) is a term reflecting the properties of text-lines in rectified images [1]. The optimization of this term removes the distortion on text regions well, however it sometimes yields severe distortions on non-text regions, and we also exploit line segments in document images by introducing ![equation](https://latex.codecogs.com/gif.latex?f_%7Bline%7D%5C%28%5CTheta%20%5C%29)
 
 
 ### Alignments of line semgents and its term
@@ -55,15 +53,14 @@ Based on the observation that the majority of line segments are horizontally or 
 
 where ![equation](https://latex.codecogs.com/gif.latex?%5Ctheta_%7Bi%7D) is the angle of the transformed ![equation](https://latex.codecogs.com/gif.latex?i)-th line segment (when rectified with the current parameters ![equation](https://latex.codecogs.com/gif.latex?%5CTheta)). This term makes that all line segments are aligned in either vertical or horizontal direction.
 
-### Outlier removal and optimization
-The direct optimization of ![equation](https://latex.codecogs.com/gif.latex?f_%7Bcost%7D) may yield poorly rectified results, due to outliers. We treat two outlier types that are missed text-lines and line segments having arbitrary direction (non horizontal/vertical). For the outlier removal, we design an iterative mathod. For the outlier removal, we design an iterative method. At each step, we refine the features (text components and line segments) by removing outlier and minimize the cost function with updated inliers.
-
+### Outlier removal
 <p align="center">
-<img src="/images/iteration.png" width="500"> 
+<img src="/image/iteration.png" width="500"> 
 </p>
 
+The direct optimization of ![equation](https://latex.codecogs.com/gif.latex?f_%7Bcost%7D) may yield poorly rectified results, due to outliers. We treat two outlier types that are missed text-lines and line segments having arbitrary direction (non horizontal/vertical). For the outlier removal, we design an iterative method. At each step, we refine the features (text components and line segments) by removing outlier (that are not well aligned) and minimize the cost function with updated inliers.
+
 ## Experimental results
-### Experimental results on CBDAR 2007 dewarping contest dataset
 ### Experimental results on our dataset (non conventional images)
 
 
