@@ -44,7 +44,7 @@ where ![equation](https://latex.codecogs.com/gif.latex?f_%7Btext%7D%5C%28%5CThet
 
 ### Alignments of line semgents and its term
 <p align="center">
-<img src="/image/angle.png" width="500"> 
+<img src="/image/angle.png" width="600"> 
 </p>
 
 Based on the observation that the majority of line segments are horizontally or vertically aligned in the rectified images, we define the term as
@@ -55,7 +55,7 @@ where ![equation](https://latex.codecogs.com/gif.latex?%5Ctheta_%7Bi%7D) is the 
 
 ### Outlier removal
 <p align="center">
-<img src="/image/iteration.png" width="500"> 
+<img src="/image/iteration.png" width="800"> 
 </p>
 
 The direct optimization of ![equation](https://latex.codecogs.com/gif.latex?f_%7Bcost%7D) may yield poorly rectified results, due to outliers. We treat two outlier types that are missed text-lines and line segments having arbitrary direction (non horizontal/vertical). For the outlier removal, we design an iterative method. At each step, we refine the features (text components and line segments) by removing outlier (that are not well aligned) and minimize the cost function with updated inliers.
