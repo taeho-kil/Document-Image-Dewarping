@@ -62,7 +62,7 @@ The direct optimization of ![equation](https://latex.codecogs.com/gif.latex?f_%7
 
 ## Experimental results
 <p align="center">
-<img src="/image/result.png" width="800"> 
+<img src="/image/result.PNG" width="800"> 
 </p>
 
 
