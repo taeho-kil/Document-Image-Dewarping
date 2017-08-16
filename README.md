@@ -61,7 +61,9 @@ where ![equation](https://latex.codecogs.com/gif.latex?%5Ctheta_%7Bi%7D) is the 
 The direct optimization of ![equation](https://latex.codecogs.com/gif.latex?f_%7Bcost%7D) may yield poorly rectified results, due to outliers. We treat two outlier types that are missed text-lines and line segments having arbitrary direction (non horizontal/vertical). For the outlier removal, we design an iterative method. At each step, we refine the features (text components and line segments) by removing outlier (that are not well aligned) and minimize the cost function with updated inliers.
 
 ## Experimental results
-### Experimental results on our dataset (non conventional images)
+<p align="center">
+<img src="/image/result.png" width="800"> 
+</p>
 
 
 ## Reference
