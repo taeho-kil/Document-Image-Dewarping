@@ -22,25 +22,34 @@ Moreover, the proposed method can extend to general curves surfaces as well as d
 <img src="/algorithm_image/model_poly.png" width="400"> 
 </p>
 For the parametric modeling of the dewarping process, we adopt the model in [2].
-By this model, the geometric relation between the captured image domain and the rectified document domain can be parameterized with the polynomial parameters ![equation](https://latex.codecogs.com/gif.latex?\left&space;\{&space;a_m&space;\right&space;\}_{m=0}^{M}) and camera pose matrix ![equation](https://latex.codecogs.com/gif.latex?%5Cmathbf%7BR%7D) and focal length .
+By this model, the geometric relation between the captured image domain and the rectified document domain can be parameterized with the polynomial parameters ![equation](https://latex.codecogs.com/gif.latex?\left&space;\{&space;a_m&space;\right&space;\}_{m=0}^{M}) and camera pose matrix ![equation](https://latex.codecogs.com/gif.latex?\mathbf{R}) and focal length ![equation](https://latex.codecogs.com/gif.latex?f).
 
-For the estimation of these dewarping parameters ![equation](https://latex.codecogs.com/gif.latex?%5CTheta%20%3D%5C%28%5C%7Ba_%7Bm%7D%5C%7D_%7Bm%3D0%7D%5E%7BM%7D%2C%5Cmathbf%7BR%7D%5C%29), we develop a cost function:
+For the estimation of these dewarping parameters, we develop a cost function:
 
 ![equation](https://latex.codecogs.com/gif.latex?f_%7Bcost%7D%5C%28%5CTheta%20%5C%29%3Df_%7Btext%7D%5C%28%5CTheta%20%5C%29&plus;%5Clambda%20f_%7Bline%7D%5C%28%5CTheta%20%5C%29)
 
 where ![equation](https://latex.codecogs.com/gif.latex?f_%7Btext%7D%5C%28%5CTheta%20%5C%29) is a term reflecting the properties of text-lines in rectified images [2]. The optimization of this term removes the distortion on text regions well, however it sometimes yields severe distortions on non-text regions, and we also exploit line segments in document images by introducing ![equation](https://latex.codecogs.com/gif.latex?f_%7Bline%7D%5C%28%5CTheta%20%5C%29)
 
 
-### Alignments of line semgents and its term
+### Two line semgent properties
+Using two line segmnet properties, we encode the cost function. Two properties are that straightness and alignment properties.
+
+#### Straightness property
 <p align="center">
-<img src="/image/angle.png" width="500"> 
+<img src="/image_algorithm/straight_property.png" width="500"> 
 </p>
 
-Based on the observation that the majority of line segments are horizontally or vertically aligned in the rectified images, we define the term as
+The straightness property describes the line segments extracted in curved document image, lines on the curved document surface become still straight in the well-rectified domain (Although the lines extracted in the well-rectified image can be curved in the curved document surface). It means that line-to-line mapping.
+Since the straightness property is always satisfied with all plane to plane mapping, it is not a significant constraint in rectification considering only camera view (such as homography). However we consider page curve as well as camera view in rectification process, then this property becomes an efficient constraint that prevents lines from being curved.
 
-![equation](https://latex.codecogs.com/gif.latex?f_%7Bline%7D%28%20%5CTheta%20%29%3D%20%5Csum_%7Bi%7D%20%5Cmin%20%28%5Ccos%5E%7B2%7D%20%5Ctheta_%7Bi%7D%20%2C%5Csin%5E%7B2%7D%20%5Ctheta_%7Bi%7D%29%2C)
 
-where ![equation](https://latex.codecogs.com/gif.latex?%5Ctheta_%7Bi%7D) is the angle of the transformed ![equation](https://latex.codecogs.com/gif.latex?i)-th line segment (when rectified with the current parameters ![equation](https://latex.codecogs.com/gif.latex?%5CTheta)). This term makes that all line segments are aligned in either vertical or horizontal direction.
+#### Alginment property
+<p align="center">
+<img src="/image_algorithm/alignment_property.png" width="500"> 
+</p>
+
+Based on the observation that the majority of line segments are horizontally or vertically aligned in the rectified images.
+
 
 ### Outlier removal
 <p align="center">
@@ -50,10 +59,15 @@ where ![equation](https://latex.codecogs.com/gif.latex?%5Ctheta_%7Bi%7D) is the 
 The direct optimization of ![equation](https://latex.codecogs.com/gif.latex?f_%7Bcost%7D) may yield poorly rectified results, due to outliers. We treat two outlier types that are missed text-lines and line segments having arbitrary direction (non horizontal/vertical). For the outlier removal, we design an iterative method. At each step, we refine the features (text components and line segments) by removing outlier (that are not well aligned) and minimize the cost function with updated inliers.
 
 ## Experimental results
-<p align="center">
-<img src="/image/result.PNG" width="800"> 
-</p>
+### CBDAR 2007 dataset
+### Our document image dataset
+### Our curved image dataset
+
+## Executable program
+
 
 
 ## Reference
-1. Beom Su Kim, Hyung Il Koo, and Nam Ik Cho, "Document Dewarping via Text-line based Optimization," Pattern Recognition, Vol. 48, No. 11, pp. 3600 - 3614, Nov. 2015.
+[1]. Taeho Kil, Wonkyo Seo, Hyung Il Koo and Nam Ik Cho, "Robust Document Image Dewarping Using Text-Line and Line Segments", ICDAR 2017.
+
+[2]. Beom Su Kim, Hyung Il Koo, and Nam Ik Cho, "Document Dewarping via Text-line based Optimization", Pattern Recognition 2015.
