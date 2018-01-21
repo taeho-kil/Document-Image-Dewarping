@@ -81,6 +81,6 @@ http://ispl.synology.me:8480/sharing/uA2DTRA8U
 
 
 ## Reference
-[1]. Taeho Kil, Wonkyo Seo, Hyung Il Koo and Nam Ik Cho, "Robust Document Image Dewarping Using Text-Line and Line Segments", ICDAR 2017.
+[1] Taeho Kil, Wonkyo Seo, Hyung Il Koo and Nam Ik Cho, "Robust Document Image Dewarping Using Text-Line and Line Segments", ICDAR 2017.
 
-[2]. Beom Su Kim, Hyung Il Koo, and Nam Ik Cho, "Document Dewarping via Text-line based Optimization", Pattern Recognition 2015.
+[2] Beom Su Kim, Hyung Il Koo, and Nam Ik Cho, "Document Dewarping via Text-line based Optimization", Pattern Recognition 2015.
