@@ -1,4 +1,4 @@
-# Document Image Dewarping using Text-lines and Line Segments
+# Document image dewarping using text-lines and line Segments
 
 
 <p align="center">
@@ -22,7 +22,7 @@ Moreover, the proposed method can extend to general curves surfaces as well as d
 <img src="/algorithm_image/model_poly.png" width="400"> 
 </p>
 For the parametric modeling of the dewarping process, we adopt the model in [2].
-By this model, the geometric relation between the captured image domain and the rectified document domain can be parameterized with the polynomial parameters ![equation](https://latex.codecogs.com/gif.latex?%5C%7Ba_%7Bm%7D%5C%7D_%7Bm%3D0%7D%5E%7BM%7D) and camera pose matrix ![equation](https://latex.codecogs.com/gif.latex?%5Cmathbf%7BR%7D) and focal length .
+By this model, the geometric relation between the captured image domain and the rectified document domain can be parameterized with the polynomial parameters ![equation](<img src="https://latex.codecogs.com/gif.latex?\left&space;\{&space;a_m&space;\right&space;\}_{m=0}^{M}" title="\left \{ a_m \right \}_{m=0}^{M}" />) and camera pose matrix ![equation](https://latex.codecogs.com/gif.latex?%5Cmathbf%7BR%7D) and focal length .
 
 For the estimation of these dewarping parameters ![equation](https://latex.codecogs.com/gif.latex?%5CTheta%20%3D%5C%28%5C%7Ba_%7Bm%7D%5C%7D_%7Bm%3D0%7D%5E%7BM%7D%2C%5Cmathbf%7BR%7D%5C%29), we develop a cost function:
 
