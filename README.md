@@ -49,8 +49,6 @@ We evaluate our method on the CBDAR 2007 dewarpint contest dataset [http://staff
 | <img src="/results/cbdar/4_in.png" width="200">  | <img src="/results/cbdar/4_kim.png" width="200">  | <img src="/results/cbdar/4_proposed.png" width="200">  |
 | <img src="/results/cbdar/5_in.png" width="200">  | <img src="/results/cbdar/5_kim.png" width="200">  | <img src="/results/cbdar/5_proposed.png" width="200">  |
 | <img src="/results/cbdar/6_in.png" width="200">  | <img src="/results/cbdar/6_kim.png" width="200">  | <img src="/results/cbdar/6_proposed.png" width="200">  |
-| <img src="/results/cbdar/7_in.png" width="200">  | <img src="/results/cbdar/7_kim.png" width="200">  | <img src="/results/cbdar/7_proposed.png" width="200">  |
-| <img src="/results/cbdar/8_in.png" width="200">  | <img src="/results/cbdar/8_kim.png" width="200">  | <img src="/results/cbdar/8_proposed.png" width="200">  |
 
 ### Our document image dataset
 In order to consist of non conventional document images (i.e., not text-abundant cases), we collected 100 images having various layouts (e.g., three column documents, documents containing large tables and/or figures, presentation slides, and so on).
@@ -63,22 +61,18 @@ In order to consist of non conventional document images (i.e., not text-abundant
 | <img src="/results/dataset1/4_in.png" width="200">  | <img src="/results/dataset1/4_kim.png" width="200">  | <img src="/results/dataset1/4_proposed.png" width="200">  |
 | <img src="/results/dataset1/5_in.png" width="200">  | <img src="/results/dataset1/5_kim.png" width="200">  | <img src="/results/dataset1/5_proposed.png" width="200">  |
 | <img src="/results/dataset1/6_in.png" width="200">  | <img src="/results/dataset1/6_kim.png" width="200">  | <img src="/results/dataset1/6_proposed.png" width="200">  |
-| <img src="/results/dataset1/7_in.png" width="200">  | <img src="/results/dataset1/7_kim.png" width="200">  | <img src="/results/dataset1/7_proposed.png" width="200">  |
-| <img src="/results/dataset1/8_in.png" width="200">  | <img src="/results/dataset1/8_kim.png" width="200">  | <img src="/results/dataset1/8_proposed.png" width="200">  |
 
 ### Our curved image dataset
-In order to consist of non conventional document images (i.e., not text-abundant cases), we collected 100 images having various layouts (e.g., three column documents, documents containing large tables and/or figures, presentation slides, and so on).
+In order to consist of general curved surface images (such as bottles), we collected 74 images.
 
 | Input image   |    Kim [2]    |   Proposed    |
 | ------------- | ------------- | ------------- |
-| <img src="/results/dataset1/1_in.png" width="200">  | <img src="/results/dataset1/1_kim.png" width="200">  | <img src="/results/dataset1/1_proposed.png" width="200">  |
-| <img src="/results/dataset1/2_in.png" width="200">  | <img src="/results/dataset1/2_kim.png" width="200">  | <img src="/results/dataset1/2_proposed.png" width="200">  |
-| <img src="/results/dataset1/3_in.png" width="200">  | <img src="/results/dataset1/3_kim.png" width="200">  | <img src="/results/dataset1/3_proposed.png" width="200">  |
-| <img src="/results/dataset1/4_in.png" width="200">  | <img src="/results/dataset1/4_kim.png" width="200">  | <img src="/results/dataset1/4_proposed.png" width="200">  |
-| <img src="/results/dataset1/5_in.png" width="200">  | <img src="/results/dataset1/5_kim.png" width="200">  | <img src="/results/dataset1/5_proposed.png" width="200">  |
-| <img src="/results/dataset1/6_in.png" width="200">  | <img src="/results/dataset1/6_kim.png" width="200">  | <img src="/results/dataset1/6_proposed.png" width="200">  |
-| <img src="/results/dataset1/7_in.png" width="200">  | <img src="/results/dataset1/7_kim.png" width="200">  | <img src="/results/dataset1/7_proposed.png" width="200">  |
-| <img src="/results/dataset1/8_in.png" width="200">  | <img src="/results/dataset1/8_kim.png" width="200">  | <img src="/results/dataset1/8_proposed.png" width="200">  |
+| <img src="/results/dataset2/1_in.png" width="200">  | <img src="/results/dataset2/1_kim.png" width="200">  | <img src="/results/dataset2/1_proposed.png" width="200">  |
+| <img src="/results/dataset2/2_in.png" width="200">  | <img src="/results/dataset2/2_kim.png" width="200">  | <img src="/results/dataset2/2_proposed.png" width="200">  |
+| <img src="/results/dataset2/3_in.png" width="200">  | <img src="/results/dataset2/3_kim.png" width="200">  | <img src="/results/dataset2/3_proposed.png" width="200">  |
+| <img src="/results/dataset2/4_in.png" width="200">  | <img src="/results/dataset2/4_kim.png" width="200">  | <img src="/results/dataset2/4_proposed.png" width="200">  |
+| <img src="/results/dataset2/5_in.png" width="200">  | <img src="/results/dataset2/5_kim.png" width="200">  | <img src="/results/dataset2/5_proposed.png" width="200">  |
+| <img src="/results/dataset2/6_in.png" width="200">  | <img src="/results/dataset2/6_kim.png" width="200">  | <img src="/results/dataset2/6_proposed.png" width="200">  |
 
 ## Executable program
 Executable program can be downloaded by below links:
