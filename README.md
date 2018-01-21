@@ -2,7 +2,7 @@
 
 
 <p align="center">
-<img src="/algorithm_image/abs.png" width="800"> 
+<img src="/algorithm_image/abs.png" width="600"> 
 </p>
 
 
@@ -26,6 +26,7 @@ By this model, the geometric relation between the captured image domain and the 
 
 For the estimation of these dewarping parameters, we develop a cost function:
 
+![equation](https://latex.codecogs.com/gif.latex?f_%7Bcost%7D%5C%28%5CTheta%20%5C%29%3Df_%7Btext%7D%5C%28%5CTheta%20%5C%29&plus;%5Clambda%20f_%7Bline%7D%5C%28%5CTheta%20%5C%29)
 ![equation](https://latex.codecogs.com/gif.latex?f_%7Bcost%7D%5C%28%5CTheta%20%5C%29%3Df_%7Btext%7D%5C%28%5CTheta%20%5C%29&plus;%5Clambda%20f_%7Bline%7D%5C%28%5CTheta%20%5C%29)
 
 where ![equation](https://latex.codecogs.com/gif.latex?f_%7Btext%7D%5C%28%5CTheta%20%5C%29) is a term reflecting the properties of text-lines in rectified images [2]. The optimization of this term removes the distortion on text regions well, however it sometimes yields severe distortions on non-text regions, and we also exploit line segments in document images by introducing ![equation](https://latex.codecogs.com/gif.latex?f_%7Bline%7D%5C%28%5CTheta%20%5C%29)
