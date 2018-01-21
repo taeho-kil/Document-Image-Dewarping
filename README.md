@@ -36,7 +36,7 @@ Using two line segmnet properties, we encode the cost function. Two properties a
 
 #### Straightness property
 <p align="center">
-<img src="/image_algorithm/straight_property.png" width="500"> 
+<img src="/algorithm_image/straight_property.png" width="500"> 
 </p>
 
 The straightness property describes the line segments extracted in curved document image, lines on the curved document surface become still straight in the well-rectified domain (Although the lines extracted in the well-rectified image can be curved in the curved document surface). It means that line-to-line mapping.
@@ -45,7 +45,7 @@ Since the straightness property is always satisfied with all plane to plane mapp
 
 #### Alginment property
 <p align="center">
-<img src="/image_algorithm/alignment_property.png" width="500"> 
+<img src="/algorithm_image/alignment_property.png" width="500"> 
 </p>
 
 Based on the observation that the majority of line segments are horizontally or vertically aligned in the rectified images.
