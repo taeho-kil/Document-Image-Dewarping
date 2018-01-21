@@ -18,8 +18,8 @@ Moreover, the proposed method can extend to general curves surfaces as well as d
 ## Algorithm
 ### Proposed cost function
 <p align="center">
-<img src="/algorithm_image/model_pose.png" width="300"> 
-<img src="/algorithm_image/model_poly.png" width="300"> 
+<img src="/algorithm_image/model_pose.png" width="400"> 
+<img src="/algorithm_image/model_poly.png" width="400"> 
 </p>
 For the parametric modeling of the dewarping process, we adopt the model in [2].
 By this model, the geometric relation between the captured image domain and the rectified document domain can be
