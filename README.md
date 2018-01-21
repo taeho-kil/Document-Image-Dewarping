@@ -40,7 +40,8 @@ The direct optimization of ![equation](https://latex.codecogs.com/gif.latex?f_%7
 ## Experimental results
 ### CBDAR 2007 dataset
 We evaluate our method on the CBDAR 2007 dewarpint contest dataset [http://staffhome.ecm.uwa.edu.au/~00082689/downloads.html], that is consisted of binarized text images.
-| Input image   |    Kim [2]   |  Proposed [1]  |
+
+| Input image   |    Kim [2]    |   Proposed    |
 | ------------- | ------------- | ------------- |
 | <img src="/results/cbdar/1_in.jpg" width="200">  | <img src="/results/cbdar/1_kim.png" width="200">  | <img src="/results/real_scene/1_proposed.png" width="200">  |
 | <img src="/results/cbdar/2_in.jpg" width="200">  | <img src="/results/cbdar/2_kim.png" width="200">  | <img src="/results/real_scene/2_proposed.png" width="200">  |
