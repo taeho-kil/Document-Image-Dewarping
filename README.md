@@ -16,21 +16,6 @@ By minimizing the function, we can obtain transformation parameters for camera p
 Moreover, the proposed method can extend to general curves surfaces as well as document.
 
 ## Algorithm
-### Proposed cost function
-<p align="center">
-<img src="/algorithm_image/model_pose.png" width="400"> 
-<img src="/algorithm_image/model_poly.png" width="400"> 
-</p>
-For the parametric modeling of the dewarping process, we adopt the model in [2].
-By this model, the geometric relation between the captured image domain and the rectified document domain can be parameterized with the polynomial parameters, camera pose matrix and focal length ![equation].
-
-For the estimation of these dewarping parameters, we develop a cost function:
-
-![equation](https://latex.codecogs.com/gif.latex?f_%7Bcost%7D%5C%28%5CTheta%20%5C%29%3Df_%7Btext%7D%5C%28%5CTheta%20%5C%29&plus;%5Clambda%20f_%7Bline%7D%5C%28%5CTheta%20%5C%29)
-![equation](https://latex.codecogs.com/gif.latex?f_%7Bcost%7D%5C%28%5CTheta%20%5C%29%3Df_%7Btext%7D%5C%28%5CTheta%20%5C%29&plus;%5Clambda%20f_%7Bline%7D%5C%28%5CTheta%20%5C%29)
-
-where ![equation](https://latex.codecogs.com/gif.latex?f_%7Btext%7D%5C%28%5CTheta%20%5C%29) is a term reflecting the properties of text-lines in rectified images [2]. The optimization of this term removes the distortion on text regions well, however it sometimes yields severe distortions on non-text regions, and we also exploit line segments in document images by introducing ![equation](https://latex.codecogs.com/gif.latex?f_%7Bline%7D%5C%28%5CTheta%20%5C%29)
-
 
 ### Two line semgent properties
 <p align="center">
@@ -45,7 +30,6 @@ Since the straightness property is always satisfied with all plane to plane mapp
 #### Alignment property
 Based on the observation that the majority of line segments are horizontally or vertically aligned in the rectified images.
 
-
 ### Outlier removal
 <p align="center">
 <img src="/image/iteration.png" width="800"> 
@@ -55,6 +39,20 @@ The direct optimization of ![equation](https://latex.codecogs.com/gif.latex?f_%7
 
 ## Experimental results
 ### CBDAR 2007 dataset
+We evaluate our method on the CBDAR 2007 dewarpint contest dataset [http://staffhome.ecm.uwa.edu.au/~00082689/downloads.html], that is consisted of binarized text images.
+| Input image   |    Kim [2]   |  Proposed [1]  |
+| ------------- | ------------- | ------------- |
+| <img src="/results/cbdar/1_in.jpg" width="200">  | <img src="/results/cbdar/1_kim.png" width="200">  | <img src="/results/real_scene/1_proposed.png" width="200">  |
+| <img src="/results/cbdar/2_in.jpg" width="200">  | <img src="/results/cbdar/2_kim.png" width="200">  | <img src="/results/real_scene/2_proposed.png" width="200">  |
+| <img src="/results/cbdar/3_in.jpg" width="200">  | <img src="/results/cbdar/3_kim.png" width="200">  | <img src="/results/real_scene/3_proposed.png" width="200">  |
+| <img src="/results/cbdar/4_in.jpg" width="200">  | <img src="/results/cbdar/4_kim.png" width="200">  | <img src="/results/real_scene/4_proposed.png" width="200">  |
+| <img src="/results/cbdar/5_in.jpg" width="200">  | <img src="/results/cbdar/5_kim.png" width="200">  | <img src="/results/real_scene/5_proposed.png" width="200">  |
+| <img src="/results/cbdar/6_in.jpg" width="200">  | <img src="/results/cbdar/6_kim.png" width="200">  | <img src="/results/real_scene/6_proposed.png" width="200">  |
+| <img src="/results/cbdar/7_in.jpg" width="200">  | <img src="/results/cbdar/7_kim.png" width="200">  | <img src="/results/real_scene/7_proposed.png" width="200">  |
+| <img src="/results/cbdar/8_in.jpg" width="200">  | <img src="/results/cbdar/8_kim.png" width="200">  | <img src="/results/real_scene/8_proposed.png" width="200">  |
+
+
+
 ### Our document image dataset
 ### Our curved image dataset
 
