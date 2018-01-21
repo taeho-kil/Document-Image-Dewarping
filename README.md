@@ -33,22 +33,16 @@ where ![equation](https://latex.codecogs.com/gif.latex?f_%7Btext%7D%5C%28%5CThet
 
 
 ### Two line semgent properties
-Using two line segmnet properties, we encode the cost function. Two properties are that straightness and alignment properties.
-
-#### Straightness property
 <p align="center">
-<img src="/algorithm_image/straight_property.png" width="500"> 
+<img src="/algorithm_image/straight_property.png" width="450">
+<img src="/algorithm_image/align_property.png" width="450"> 
 </p>
 
+#### Straightness property
 The straightness property describes the line segments extracted in curved document image, lines on the curved document surface become still straight in the well-rectified domain (Although the lines extracted in the well-rectified image can be curved in the curved document surface). It means that line-to-line mapping.
 Since the straightness property is always satisfied with all plane to plane mapping, it is not a significant constraint in rectification considering only camera view (such as homography). However we consider page curve as well as camera view in rectification process, then this property becomes an efficient constraint that prevents lines from being curved.
 
-
-#### Alginment property
-<p align="center">
-<img src="/algorithm_image/align_property.png" width="500"> 
-</p>
-
+#### Alignment property
 Based on the observation that the majority of line segments are horizontally or vertically aligned in the rectified images.
 
 
