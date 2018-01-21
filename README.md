@@ -34,8 +34,8 @@ where ![equation](https://latex.codecogs.com/gif.latex?f_%7Btext%7D%5C%28%5CThet
 
 ### Two line semgent properties
 <p align="center">
-<img src="/algorithm_image/straight_property.png" width="450">
-<img src="/algorithm_image/align_property.png" width="450"> 
+<img src="/algorithm_image/straight_property.png" width="400">
+<img src="/algorithm_image/align_property.png" width="400"> 
 </p>
 
 #### Straightness property
