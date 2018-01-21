@@ -22,7 +22,7 @@ Moreover, the proposed method can extend to general curves surfaces as well as d
 <img src="/algorithm_image/model_poly.png" width="400"> 
 </p>
 For the parametric modeling of the dewarping process, we adopt the model in [2].
-By this model, the geometric relation between the captured image domain and the rectified document domain can be parameterized with the polynomial parameters ![equation](https://latex.codecogs.com/gif.latex?\left&space;\{&space;a_m&space;\right&space;\}_{m=0}^{M}) and camera pose matrix ![equation](https://latex.codecogs.com/gif.latex?\mathbf{R}) and focal length ![equation](https://latex.codecogs.com/gif.latex?f).
+By this model, the geometric relation between the captured image domain and the rectified document domain can be parameterized with the polynomial parameters ![equation](https://latex.codecogs.com/gif.latex?%5Cleft%20%5C%7B%20a_m%20%5Cright%20%5C%7D_%7Bm%3D0%7D%5E%7BM%7D) and camera pose matrix ![equation](https://latex.codecogs.com/gif.latex?%5Ctextup%7BR%7D) and focal length ![equation](https://latex.codecogs.com/gif.latex?f).
 
 For the estimation of these dewarping parameters, we develop a cost function:
 
